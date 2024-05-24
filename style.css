@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+#navbar{
+    margin-left: 2rem;
+    margin-top:2rem;
+}
+#logo{
+    /* display: none; */
+    float: left;
+    margin-right: 7rem;
+    width: 7rem;
+}
+#notdropdown{
+    display: flex;
+    gap:5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color:hsl(0, 0%, 50%);
+    
+}
+#notdropdown li a:hover{
+    color:black
+
+}
+.spacing{
+    margin-right: 0.5rem;
+}
+.arrow{
+    rotate: 180deg;
+    margin-left: 0.5rem;
+    transition: 0.5s;
+    
+    
+}
+#notdropdown li a:hover .arrow{
+    filter: brightness(-130%);
+    rotate:0deg;
+    
+    
+    
+}
+
+#loginbox{
+    display: flex;
+    gap:2rem;
+    position: absolute;
+    right: 2rem;
+    
+}
+#loginbox li a{
+    transition: 0.3s;
+}
+#loginbox li a:hover{
+    border: solid;
+    padding: 1rem;
+    border-radius: 20px;
+
+}
+#notdropdown, li a{
+    list-style: none;
+    transition: 0.5s;
+}
+#dropdown2,#dropdown2, li{
+    list-style: none;
+}
+#dropdown1 li{
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+#dropdown2 li{
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+#dropdown1,#dropdown2{
+    
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-top:2rem;
+    background-color: white ;
+    box-shadow: 0rem 0rem 0.5rem 0rem rgba(128, 128, 128, 0.284);
+    border-radius: 10px;
+}
+#dropdown1 li:hover{
+    background-color: rgb(186, 181, 181);
+    border-radius: 10px;
+}
+#dropdown2 li:hover{
+    background-color: rgb(186, 181, 181);
+    border-radius: 10px;
+}
+.size-bigger1,.size-bigger2{
+    display: none;
+}
+.Feature:hover .size-bigger1{
+    display: block;
+    
+}
+.Company:hover .size-bigger2{
+    display:block;
+}
+.Company:hover{
+    padding-right: 1rem;
+}
+#mainpage{
+    z-index: -10;
+    height: 75vh;
+    width: 60%;
+    bottom: 0;
+    position: absolute;
+}
+#text h1{
+    font-size: 9rem;
+    width: 95%;
+
+}
+#text p{
+    font-size: 1.5rem;
+    color:hsl(0, 0%, 50%);
+    width: 70%;
+    margin-top: 2rem;
+}
+#photobox{
+    position: absolute;
+    right: 6rem;
+    bottom: 0;
+    height: 90vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#close{
+    display: none;
+}
+#menu{
+    display: none;
+    margin-top: 2rem;
+}
+#mainphoto1{
+    height: 750px;
+    
+}
+#text{
+    padding-left: 14rem;
+
+}
+#button{
+    margin-top: 3rem;
+    padding: 1rem 3rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.3rem;
+    background-color: transparent;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+#button:hover{
+    padding: 1.5rem 3.5rem;
+}
+#sponser{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap:4rem;
+    
+    
+}
+#moving{
+    position: absolute;
+    bottom: 4rem;
+    padding-left: 14rem;
+}
+.size{
+    width: 150px;
+}
+#mainphoto2{
+    display: none;
+}
+@media  only screen and (max-width:980px){
+    #notdropdown{
+        display:none;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        z-index: 999;
+        height: 100vh;
+        box-shadow: 0rem 0rem 3rem 0rem rgba(128, 128, 128, 0.284);;
+    }
+    #loginbox{
+        flex-direction: column;
+        position: relative;
+        right: 0;
+        gap:4rem;
+    }
+    #mainphoto1{
+        /* position: absolute;
+        top:0; */
+        display: none;
+       
+       
+    }
+    #text{
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #navbar{
+        margin-top: 0;
+    }
+    #mainpage{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        /* margin-left: 2rem; */
+        text-align: center;
+        height: 60vh;
+    }
+    #text h1{
+        width: 100%;
+        font-size: 6rem;
+    }
+    #text p{
+        width: 80%;
+        font-size: 2.5rem;
+    }
+    #button{
+        background-color: black;
+        color:white;
+        font-size: 3rem;
+        width: 25rem;
+    }
+    #dropdown1,#dropdown2{
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+
+        
+    #notdropdown{
+        padding: 2rem;
+        font-size: 3rem;
+    }
+    #dropdown1 li{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .spacing{
+        width: 2rem;
+        margin-right: 1rem;
+    }
+    .arrow{
+        width: 2rem;
+    }
+    #dropdown2 li{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    #moving{
+        z-index: -1;
+        padding-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #mainphoto2{
+        display: block;
+        position: absolute;
+        top:13rem;
+        width: 100%;
+        z-index: -10000;
+    }
+    #logo{
+        width: 10rem;
+        margin-top: 2rem;
+    }
+    #sponser{
+        
+    }
+    #menu{
+        position: absolute;
+        display:block;
+        width: 4rem;
+        right: 2rem;
+        z-index: 100;
+        /* transition: 0.5s; */
+    }
+
+    #close{
+        margin-top: 2rem;
+        position: absolute;
+        display:none;
+        width: 4rem;
+        right: 2rem;
+        z-index: 99;
+
+    }
+    scroll
+    @media (orientation:landscape){
+        #mainphoto2{
+            display:none;
+        }
+        
+    }
+}
